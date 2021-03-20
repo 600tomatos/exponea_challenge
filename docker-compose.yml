@@ -1,0 +1,17 @@
+version: "3.4"
+
+x-shared-env:
+  &shared-env
+  DEBUG: 'false'
+  EXPONEA_URL: 'https://exponea-engineering-assignment.appspot.com/api/work'
+
+services:
+
+  exponea_api:
+    build:
+      context: ./src
+    environment:
+      <<: *shared-env
+    container_name:   exponea_api
+    ports:
+      - 5000:80
