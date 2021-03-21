@@ -34,6 +34,13 @@ Before you start you need to have the following software installed on your PC:
 * docker-compose (optionally, you can use `make docker` to build and run container purely with docker)
 * python >= 3.7 (optionally,  you need python only if you want to start local server without docker)
 
+### Big Picture
+
+I've used standard consumer/producer approach to design all endpoints.
+
+In each of the endponts, as a rule, 3 producers are launched,
+which make requests to the third part api and then put the results of execution to a common queue.
+Consumer pulls results from this queue and, depending on the conditions, can cancel further execution of producers.
 
 ### API and Swagger
 

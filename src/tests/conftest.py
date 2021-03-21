@@ -16,7 +16,7 @@ EXECUTOR_TIMEOUT = 5
 
 @pytest.fixture
 def app():
-    from app import app
+    from main import app
     return app
 
 
