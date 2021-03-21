@@ -16,7 +16,7 @@ To execute the command, simply type `make <command>` in the terminal
 |  init	|  Install the necessary dependencies for local development and deployment. |
 |  local 	|   Start local development server (without docker)	|
 |  run 	|   Start production ready server based on docker and gunicorn using docker-compose.	|
-|  run 	|   Start production ready server based on docker and gunicorn using docker (I'd suggest using make run)	|
+|  docker 	|   Start production ready server based on docker and gunicorn using docker (I'd suggest using make run)	|
 |  test 	|   Run local tests.   |
 |  exec_docker & clean 	|   Internal commands which I used for debugging	|
 
